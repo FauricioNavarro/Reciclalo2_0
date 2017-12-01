@@ -7,6 +7,16 @@
     android:layout_height="match_parent"
     tools:context="com.example.fauricio.prueba0.reciclalo2_0.Dashboards">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:menu="@menu/drawer"/>
+
     <TextView
         android:id="@+id/message"
         android:layout_width="wrap_content"
@@ -17,6 +27,7 @@
         android:text="@string/title_home"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
